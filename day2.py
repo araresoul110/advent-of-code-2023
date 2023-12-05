@@ -13,11 +13,6 @@ def find_valid_games():
 
         valid = True
         for handful in split_line[1:]:
-            # Can't be valid if don't have at least some of every color
-            #if handful.count(",") < 2:
-            #    valid = False
-            #    break
-
             values = [int(i) for i in handful.split() if i.isdigit()]
             colors = [j.replace(",", "") for j in handful.split() if j.isdigit() == False]
             for x in range(len(colors)):
@@ -34,5 +29,5 @@ numbers = find_valid_games()
 solution = sum(numbers)
 print(solution)
 # Solution:
-#  489
+#  2512
 #  
