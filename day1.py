@@ -3,9 +3,9 @@ from prep_input import *
 def find_numbers(part):
     calibration_numbers = []
 
-    raw_lines = prep_input('day1_input.txt')
+    Lines = prep_input('day1_input.txt')
     if (part == 2):
-        Lines = replace_numbers(raw_lines)
+        Lines = replace_numbers(Lines)
 
     for line in Lines:
         first_number = 0
