@@ -39,8 +39,7 @@ def count_cards_won(win_count_per_card):
     return sum(num_instances_won)
 
 solution = analyze_cards(2)
-
 print(solution)
 # Solution:
 #  28750
-#  1230
+#  10212704

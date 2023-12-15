@@ -1,9 +1,10 @@
 from prep_input import *
 
 def find_numbers(part):
-    calibration_numbers = []
 
+    calibration_numbers = []
     Lines = prep_input('day1_input.txt')
+
     if (part == 2):
         Lines = replace_numbers(Lines)
 
@@ -20,6 +21,7 @@ def find_numbers(part):
             if character.isdigit():
                 second_number = character
                 break
+
         calibration_numbers.append(int(first_number + second_number))
 
     return calibration_numbers
